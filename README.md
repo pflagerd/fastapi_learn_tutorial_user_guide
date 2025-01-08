@@ -26,22 +26,37 @@ Type
 ./RUNME
 ```
 
-# 👨‍🔧 Fix Me!
-
 In the shell from which you just executed `./RUNME` you should see something like:
 ```
- * Serving Flask app 'app'
- * Debug mode: on
-WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
- * Running on http://127.0.0.1:5000
-Press CTRL+C to quit
- * Restarting with stat
- * Debugger is active!
- * Debugger PIN: 259-072-464
-127.0.0.1 - - [25/Oct/2024 09:32:42] "GET / HTTP/1.1" 200 -
-127.0.0.1 - - [25/Oct/2024 09:32:42] "GET /static/styles.css HTTP/1.1" 200 -
-127.0.0.1 - - [25/Oct/2024 09:32:42] "GET /static/atom.ico HTTP/1.1" 200 -
-127.0.0.1 - - [25/Oct/2024 09:33:03] "POST /run HTTP/1.1" 200 -
+
+   FastAPI   Starting development server 🚀
+ 
+             Searching for package file structure from directories with __init__.py files
+             Importing from /home/oy753c/desktops/neon-algorithms/fastapi_learn_tutorial_user_guide
+ 
+    module   🐍 main.py
+ 
+      code   Importing the FastAPI app object from the module with the following code:
+ 
+             from main import app
+ 
+       app   Using import string: main:app
+ 
+    server   Server started at http://127.0.0.1:8000
+    server   Documentation at http://127.0.0.1:8000/docs
+ 
+       tip   Running in development mode, for production use: fastapi run
+ 
+             Logs:
+ 
+      INFO   Will watch for changes in these directories: ['/home/oy753c/desktops/neon-algorithms/fastapi_learn_tutorial_user_guide']
+      INFO   Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+      INFO   Started reloader process [65407] using WatchFiles
+      INFO   Started server process [65477]
+      INFO   Waiting for application startup.
+      INFO   Application startup complete.
+      INFO   127.0.0.1:46272 - "GET / HTTP/1.1" 200
+      INFO   127.0.0.1:46272 - "GET /favicon.ico HTTP/1.1" 404
 ```
 
 In a new browser window or tab, you should see something like this:
