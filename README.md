@@ -26,6 +26,8 @@ Type
 ./RUNME
 ```
 
+<span style="color:blue">some *blue* text</span>.
+
 <div style="color: red;">
 
 In the shell from which you just executed `./RUNME` you should see something like:
