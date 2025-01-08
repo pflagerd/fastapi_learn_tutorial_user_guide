@@ -66,3 +66,5 @@ In the shell from which you just executed `./RUNME` you should see something lik
 ```
 
 In a new browser window or tab, you should see something like this:
+
+![image](https://github.com/user-attachments/assets/d2fc96ae-722b-464c-942d-5cb6f44d5ac4)
