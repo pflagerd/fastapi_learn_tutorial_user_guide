@@ -14,11 +14,11 @@ You must have python3 and git.
 
 Git clone current repo to your local machine
 
-​	`git clone https://github.com/pflagerd/code-editor-flask.git`
+​	`git clone https://github.com/pflagerd/fastapi_learn_tutorial_user_guide.git`
 
-Change your working directory to code-editor-flask repository
+Change your working directory to fastapi_learn_tutorial_user_guide repository
 
-​	`cd path/to/code-editor-flask`
+​	`cd path/to/fastapi_learn_tutorial_user_guide`
 
 Type
 
