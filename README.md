@@ -26,6 +26,8 @@ Type
 ./RUNME
 ```
 
+👨‍🔧
+
 In the shell from which you just executed `./RUNME` you should see something like:
 ```
  * Serving Flask app 'app'
