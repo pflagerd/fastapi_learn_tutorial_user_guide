@@ -2,6 +2,12 @@
 
 This repository contains artifacts generated when David and Dan (D&D) executed the tutorial at [FastAPI > Learn > Tutorial - User Guide](https://fastapi.tiangolo.com/tutorial/).
 
+<br>
+
+## TODO
+David and Dan (D&D) will re-test `RUNME` in a brand new `fastapi_learn_tutorial_user_guide` working directory.
+
+<br>
 
 ## Setup
 You must have python3 and git.
