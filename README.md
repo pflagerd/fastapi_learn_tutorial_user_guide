@@ -7,6 +7,8 @@ This repository contains artifacts generated when David and Dan (D&D) executed t
 ## TODO
    Execute [First Steps](https://fastapi.tiangolo.com/tutorial/first-steps/).
    * [#1](https://github.com/pflagerd/fastapi_learn_tutorial_user_guide/issues/1)
+   * David is verifying that our implementation produces the same results as described on [First Steps](https://fastapi.tiangolo.com/tutorial/first-steps/).
+   * * David has discovered that our http://127.0.0.1:8000/docs does not match the one [here](https://fastapi.tiangolo.com/tutorial/first-steps/#alternative-api-docs:~:text=%C2%B6-,Now%20go%20to,)%3A,-OpenAPI)
 
 <br>
 
