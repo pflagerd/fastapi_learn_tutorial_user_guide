@@ -6,8 +6,7 @@ This repository contains artifacts generated when David and Dan (D&D) executed t
 
 ## TODO
    Execute [First Steps](https://fastapi.tiangolo.com/tutorial/first-steps/).
-   
-      [#1](https://github.com/pflagerd/fastapi_learn_tutorial_user_guide/issues/1)
+   * [#1](https://github.com/pflagerd/fastapi_learn_tutorial_user_guide/issues/1)
 
 <br>
 
