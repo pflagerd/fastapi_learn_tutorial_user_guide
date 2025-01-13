@@ -5,7 +5,7 @@ This repository contains artifacts created by David and Dan (D&D) when they exec
 <br>
 
 ## TODO
-   Execute [Path parameters](https://fastapi.tiangolo.com/tutorial/path-params/).
+   Execute [First Steps](https://fastapi.tiangolo.com/tutorial/first_steps/).
    * [#10](https://github.com/pflagerd/fastapi_learn_tutorial_user_guide/issues/10)
 
 <br>
