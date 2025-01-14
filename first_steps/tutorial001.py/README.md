@@ -1,6 +1,6 @@
 # fastapi_learn_tutorial_user_guide/first_steps/tutorial001.py/README.md
 
-This repository contains artifacts generated when David and Dan (D&D) executed the tutorial at [FastAPI > Learn > Tutorial - User Guide](https://fastapi.tiangolo.com/tutorial/).
+This repository contains artifacts generated when David and Dan (D&D) executed the tutorial at [FastAPI > Learn > Tutorial - User Guide > First Steps](https://fastapi.tiangolo.com/tutorial/first-steps/).
 
 <br>
 
