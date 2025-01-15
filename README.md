@@ -23,10 +23,4 @@ Git clone current repo to your local machine
 
 ​	`git clone https://github.com/pflagerd/fastapi_learn_tutorial_user_guide.git`
 
-Change your working directory to one of the subdirectories corresponding to the tutorial*.py file you are currently executing in the tutorial page itself.
-
-​	`cd path/to/fastapi_learn_tutorial_user_guide/first_steps/tutorial001.py/`
-
-Then, follow instruction in the README.md located in that directory
-
-​	`path/to/fastapi_learn_tutorial_user_guide/first_steps/tutorial001.py/README.md`
+Navigate your browser to an issue, and follow the instructions in its description.
