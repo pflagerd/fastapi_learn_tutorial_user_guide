@@ -74,7 +74,11 @@ def main(args, debug=False):
     subprocess.Popen([launcher, "https://fastapi.tiangolo.com/tutorial/first-steps/"])
     subprocess.Popen([launcher, "https://github.com/fastapi/fastapi/tree/master/docs_src/first_steps/"])
     subprocess.Popen([launcher, "https://github.com/pflagerd/fastapi_learn_tutorial_user_guide/tree/main/first_steps/"])
+    # subprocess.Popen([launcher, "http://127.0.0.1:8000"])
 
+    # os.execvp(".venv/bin/uvicorn", [".venv/bin/uvicorn", "main:app", "--reload", "--log-level", "trace"])
+    spawn("libreoffice --writer progress.odt").stdout
+    #subprocess.Popen([launcher, "libreoffice --writer progress.odt"])
 
 def spawn(command_line):
     process = subprocess.run(
