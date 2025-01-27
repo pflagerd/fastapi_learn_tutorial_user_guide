@@ -67,7 +67,7 @@ def main(args, debug=False):
     launcher = "chromium-browser"
     if not spawn('which chromium-browser').returncode:
         print(f"user_data_dir == \"{user_data_dir}\"")
-        subprocess.Popen([launcher, "--user-data-dir=/tmp/" + user_data_dir, "--new-window", "http://127.0.0.1:8000"],      stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        subprocess.Popen([launcher, "--user-data-dir=/tmp/" + user_data_dir, "--new-window", "http://127.0.0.1:8000", "http://127.0.0.1:8000/docs", "http://127.0.0.1:8000/redoc", "http://127.0.0.1:8000/openapi.json"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     else:
         if not spawn('which open').returncode:
             launcher = "open"
