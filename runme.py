@@ -64,7 +64,7 @@ def main(args, debug=False):
 
     launcher = "chromium-browser"
     if not spawn('which chromium-browser').returncode:
-        subprocess.Popen([launcher, "--user-data-dir=/tmp/junk", "--new-window", "https://fastapi.tiangolo.com/tutorial/first-steps/", "https://github.com/fastapi/fastapi/tree/master/docs_src/first_steps/", "https://github.com/pflagerd/fastapi_learn_tutorial_user_guide/tree/main/first_steps/"])
+        subprocess.Popen([launcher, "--user-data-dir=/tmp/junk", "--new-window", "https://fastapi.tiangolo.com/tutorial/first-steps/", "https://github.com/fastapi/fastapi/tree/master/docs_src/first_steps/", "https://github.com/pflagerd/fastapi_learn_tutorial_user_guide/tree/main/first_steps/"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     else:
         if not spawn('which open').returncode:
             launcher = "open"
@@ -73,11 +73,11 @@ def main(args, debug=False):
         else:
             print('Neither activity-chromium-browser, open nor gio is available in your PATH, cannot launch default browser', file=sys.stderr)
 
-        subprocess.Popen([launcher, "https://fastapi.tiangolo.com/tutorial/first-steps/"])
-        subprocess.Popen([launcher, "https://github.com/fastapi/fastapi/tree/master/docs_src/first_steps/"])
-        subprocess.Popen([launcher, "https://github.com/pflagerd/fastapi_learn_tutorial_user_guide/tree/main/first_steps/"])
+        subprocess.Popen([launcher, "https://fastapi.tiangolo.com/tutorial/first-steps/"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        subprocess.Popen([launcher, "https://github.com/fastapi/fastapi/tree/master/docs_src/first_steps/"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        subprocess.Popen([launcher, "https://github.com/pflagerd/fastapi_learn_tutorial_user_guide/tree/main/first_steps/"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 
-    spawn("libreoffice --writer progress.odt").stdout
+    subprocess.Popen(["libreoffice", "--writer", "progress.odt"], stdout=subprocess.PIPE, stderr=subprocess.PIPE).stdout
     # subprocess.Popen([launcher, "http://127.0.0.1:8000"])
     # os.execvp(".venv/bin/uvicorn", [".venv/bin/uvicorn", "main:app", "--reload", "--log-level", "trace"])
 
