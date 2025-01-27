@@ -61,14 +61,22 @@ def main(args, debug=False):
         if debug:
             print(spawn_result)
 
+    import tempfile
+    user_data_dir=tempfile.mktemp()
 
-    if not spawn('which open').returncode:
-        subprocess.Popen(["open", "http://127.0.0.1:8000"])
-        #was: spawn("open http://127.0.0.1:5000")
-    elif not spawn('which gio').returncode:
-        subprocess.Popen(["gio", "open", "http://127.0.0.1:8000"])
+    launcher = "chromium-browser"
+    if not spawn('which chromium-browser').returncode:
+        print(f"user_data_dir == \"{user_data_dir}\"")
+        subprocess.Popen([launcher, "--user-data-dir=/tmp/" + user_data_dir, "--new-window", "http://127.0.0.1:8000"],      stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     else:
-        print('Neither open nor gio is available in your PATH, cannot launch default browser', file=sys.stderr)
+        if not spawn('which open').returncode:
+            launcher = "open"
+        elif not spawn('which gio').returncode:
+            launcher = "gio"
+        else:
+            print('Neither activity-chromium-browser, open nor gio is available in your PATH, cannot launch default browser', file=sys.stderr)
+
+        subprocess.Popen([launcher, "http://127.0.0.1:8000"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 
     os.execvp(".venv/bin/fastapi", [".venv/bin/fastapi", "dev", "main.py"])
 
