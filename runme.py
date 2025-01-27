@@ -62,14 +62,15 @@ def main(args, debug=False):
             print(spawn_result)
 
 
-    launcher = "open"
-    if not spawn('which open').returncode:
+    launcher = "activity-chromium-browser"
+    if not spawn('which activity-chromium-browser').returncode:
         pass
-        #was: spawn("open http://127.0.0.1:5000")
+    elif not spawn('which open').returncode:
+        launcher = "open"
     elif not spawn('which gio').returncode:
         launcher = "gio"
     else:
-        print('Neither open nor gio is available in your PATH, cannot launch default browser', file=sys.stderr)
+        print('Neither activity-chromium-browser, open nor gio is available in your PATH, cannot launch default browser', file=sys.stderr)
 
     subprocess.Popen([launcher, "https://fastapi.tiangolo.com/tutorial/first-steps/"])
     subprocess.Popen([launcher, "https://github.com/fastapi/fastapi/tree/master/docs_src/first_steps/"])
