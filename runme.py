@@ -71,7 +71,7 @@ def main(args, debug=False):
         elif not spawn('which gio').returncode:
             launcher = "gio"
         else:
-            print('Neither activity-chromium-browser, open nor gio is available in your PATH, cannot launch default browser', file=sys.stderr)
+            print('Neither chromium-browser, open nor gio is available in your PATH, cannot launch default browser', file=sys.stderr)
 
         subprocess.Popen([launcher, "https://fastapi.tiangolo.com/tutorial/first-steps/"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         subprocess.Popen([launcher, "https://github.com/fastapi/fastapi/tree/master/docs_src/first_steps/"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)

@@ -20,7 +20,7 @@ def main(args, debug=False):
         elif not setup.spawn('which gio').returncode:
             launcher = "gio"
         else:
-            print('Neither activity-chromium-browser, open nor gio is available in your PATH, cannot launch default browser', file=sys.stderr)
+            print('Neither chromium-browser, open nor gio is available in your PATH, cannot launch default browser', file=sys.stderr)
 
         subprocess.Popen([launcher, "http://127.0.0.1:8000"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 
