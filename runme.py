@@ -64,7 +64,7 @@ def main(args, debug=False):
 
     launcher = "chromium-browser"
     if not spawn('which chromium-browser').returncode:
-        subprocess.Popen([launcher, "--user-data-dir=/tmp/junk", "--new-window", "https://fastapi.tiangolo.com/tutorial/path-params/", "https://github.com/fastapi/fastapi/tree/master/docs_src/path_params/", "https://github.com/pflagerd/fastapi_learn_tutorial_user_guide/tree/main/first_steps/"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        subprocess.Popen([launcher, "--user-data-dir=/tmp/junk", "--new-window", "https://fastapi.tiangolo.com/tutorial/path-params/", "https://github.com/fastapi/fastapi/tree/master/docs_src/path_params/", "https://github.com/pflagerd/fastapi_learn_tutorial_user_guide/tree/main/path_params/"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     else:
         if not spawn('which open').returncode:
             launcher = "open"
