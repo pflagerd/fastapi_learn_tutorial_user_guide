@@ -61,26 +61,6 @@ def main(args, debug=False):
         if debug:
             print(spawn_result)
 
-
-    launcher = "chromium-browser"
-    if not spawn('which chromium-browser').returncode:
-        subprocess.Popen([launcher, "--user-data-dir=/tmp/junk", "--new-window", "https://fastapi.tiangolo.com/tutorial/path-params/", "https://github.com/fastapi/fastapi/tree/master/docs_src/path_params/", "https://github.com/pflagerd/fastapi_learn_tutorial_user_guide/tree/main/first_steps/"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-    else:
-        if not spawn('which open').returncode:
-            launcher = "open"
-        elif not spawn('which gio').returncode:
-            launcher = "gio"
-        else:
-            print('Neither chromium-browser, open nor gio is available in your PATH, cannot launch default browser', file=sys.stderr)
-
-        subprocess.Popen([launcher, "https://fastapi.tiangolo.com/tutorial/first-steps/"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-        subprocess.Popen([launcher, "https://github.com/fastapi/fastapi/tree/master/docs_src/first_steps/"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-        subprocess.Popen([launcher, "https://github.com/pflagerd/fastapi_learn_tutorial_user_guide/tree/main/first_steps/"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-
-    # subprocess.Popen(["libreoffice", "--writer", "progress.odt"], stdout=subprocess.PIPE, stderr=subprocess.PIPE).stdout
-    # subprocess.Popen([launcher, "http://127.0.0.1:8000"])
-    # os.execvp(".venv/bin/uvicorn", [".venv/bin/uvicorn", "main:app", "--reload", "--log-level", "trace"])
-
 def spawn(command_line):
     process = subprocess.run(
         command_line.split(),
