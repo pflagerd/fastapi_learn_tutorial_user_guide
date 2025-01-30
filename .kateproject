@@ -1,0 +1,17 @@
+{
+    "name": "fastapi_learn_tutorial_user_guide",
+    "files": [
+        {
+            "directory": ".",
+            "hidden": false
+        }
+    ],
+    "build": {
+        "directory": "./",
+        "steps": [
+            {
+                "command": "make"
+            }
+        ]
+    }
+}

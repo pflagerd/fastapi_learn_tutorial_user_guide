@@ -77,7 +77,7 @@ def main(args, debug=False):
         subprocess.Popen([launcher, "https://github.com/fastapi/fastapi/tree/master/docs_src/first_steps/"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         subprocess.Popen([launcher, "https://github.com/pflagerd/fastapi_learn_tutorial_user_guide/tree/main/first_steps/"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 
-    subprocess.Popen(["libreoffice", "--writer", "progress.odt"], stdout=subprocess.PIPE, stderr=subprocess.PIPE).stdout
+    # subprocess.Popen(["libreoffice", "--writer", "progress.odt"], stdout=subprocess.PIPE, stderr=subprocess.PIPE).stdout
     # subprocess.Popen([launcher, "http://127.0.0.1:8000"])
     # os.execvp(".venv/bin/uvicorn", [".venv/bin/uvicorn", "main:app", "--reload", "--log-level", "trace"])
 
