@@ -73,9 +73,9 @@ def main(args, debug=False):
         else:
             print('Neither chromium-browser, open nor gio is available in your PATH, cannot launch default browser', file=sys.stderr)
 
-        subprocess.Popen([launcher, "https://fastapi.tiangolo.com/tutorial/first-steps/"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-        subprocess.Popen([launcher, "https://github.com/fastapi/fastapi/tree/master/docs_src/first_steps/"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-        subprocess.Popen([launcher, "https://github.com/pflagerd/fastapi_learn_tutorial_user_guide/tree/main/first_steps/"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        subprocess.Popen([launcher, "https://fastapi.tiangolo.com/tutorial/path-params/"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        subprocess.Popen([launcher, "https://github.com/fastapi/fastapi/tree/master/docs_src/path_params/"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        subprocess.Popen([launcher, "https://github.com/pflagerd/fastapi_learn_tutorial_user_guide/tree/main/path_params/tutorial001.py"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 
     # subprocess.Popen(["libreoffice", "--writer", "progress.odt"], stdout=subprocess.PIPE, stderr=subprocess.PIPE).stdout
     # subprocess.Popen([launcher, "http://127.0.0.1:8000"])
