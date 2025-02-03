@@ -4,4 +4,5 @@ if ! (which python3 >/dev/null && python3 --version | grep ' 3.' >/dev/null); th
   exit 1
 fi
 
-PYTHONPATH=$(dirname $(dirname $(dirname "$(readlink -f "$0")"))) python3 $(dirname "$(readlink -f "$0")")/setmeup.py
+! [ -f setmeup.py ] && ln -s ../../setmeup.py .
+python3 $(dirname "$(readlink -f "$0")")/setmeup.py
