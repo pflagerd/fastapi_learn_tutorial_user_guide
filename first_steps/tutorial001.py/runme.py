@@ -1,23 +1,23 @@
 #!/usr/bin/env python3
 import os
+import setmeup
 import subprocess
 import sys
 
-import setup
 def main(args, debug=False):
-    setup.main([])
+    setmeup.main([])
 
     import tempfile
     user_data_dir=tempfile.mktemp()
 
     launcher = "chromium-browser"
-    if not setup.spawn('which chromium-browser').returncode:
+    if not setmeup.spawn('which chromium-browser').returncode:
         print(f"user_data_dir == \"{user_data_dir}\"")
         subprocess.Popen([launcher, "--user-data-dir=/tmp/" + user_data_dir, "--new-window", "http://127.0.0.1:8000", "http://127.0.0.1:8000/docs", "http://127.0.0.1:8000/redoc", "http://127.0.0.1:8000/openapi.json"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     else:
-        if not setup.spawn('which open').returncode:
+        if not setmeup.spawn('which open').returncode:
             launcher = "open"
-        elif not setup.spawn('which gio').returncode:
+        elif not setmeup.spawn('which gio').returncode:
             launcher = "gio"
         else:
             print('Neither chromium-browser, open nor gio is available in your PATH, cannot launch default browser', file=sys.stderr)
