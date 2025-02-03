@@ -24,7 +24,8 @@ def main(args, debug=False):
         else:
             print('Neither chromium-browser, open nor gio is available in your PATH, cannot launch default browser', file=sys.stderr)
 
-        subprocess.Popen([launcher, "http://127.0.0.1:8000"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        for tab in tabs:
+            subprocess.Popen([launcher, tab], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 
     os.execvp(".venv/bin/fastapi", [".venv/bin/fastapi", "dev", "main.py"])
 
