@@ -7,15 +7,11 @@ import sys
 def main(args, debug=False):
     setmeup.main([])
 
-    import tempfile
-    user_data_dir=tempfile.mktemp()
-
     tabs = ["http://127.0.0.1:8000", "http://127.0.0.1:8000/docs", "http://127.0.0.1:8000/redoc", "http://127.0.0.1:8000/openapi.json"]
 
     launcher = "chromium-browser"
     if not setmeup.spawn('which chromium-browser').returncode:
-        print(f"user_data_dir == \"{user_data_dir}\"")
-        subprocess.Popen([launcher, "--user-data-dir=/tmp/" + user_data_dir, "--new-window"] + tabs, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        subprocess.Popen([launcher, "--user-data-dir=" + os.getcwd() + "/.chromium-browser", "--new-window"] + tabs, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     else:
         if not setmeup.spawn('which open').returncode:
             launcher = "open"
