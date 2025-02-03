@@ -1,4 +1,4 @@
 __pycache__
-/.venv/
-/.~lock*
-/*.kate-swp
+.venv/
+.~lock*
+*.kate-swp
