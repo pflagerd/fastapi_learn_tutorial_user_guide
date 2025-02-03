@@ -4,5 +4,6 @@ if ! (which python3 >/dev/null && python3 --version | grep ' 3.' >/dev/null); th
   exit 1
 fi
 
-! [ -f setmeup.py ] && ln -s ../../setmeup.py .
-python3 $(dirname "$(readlink -f "$0")")/runme.py
+! [ -f setmeup.py ] && cp ../../setmeup.py .
+! [ -f runme.py ] && cp ../../runme.py .
+python3 $(dirname "$(readlink -f "$0")")/runme.py "http://127.0.0.1:8000" "http://127.0.0.1:8000/docs" "http://127.0.0.1:8000/redoc" "http://127.0.0.1:8000/openapi.json"
