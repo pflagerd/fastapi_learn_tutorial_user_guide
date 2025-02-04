@@ -5,4 +5,5 @@ if ! (which python3 >/dev/null && python3 --version | grep ' 3.' >/dev/null); th
 fi
 
 ! [ -f setmeup.py ] && ln -s ../../setmeup.py .
+! [ -f requirements.txt ] && ln -s ../../requirements.txt
 python3 $(dirname "$(readlink -f "$0")")/setmeup.py
