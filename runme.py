@@ -9,8 +9,9 @@ def main(args, debug=False):
 
     launcher = "chromium-browser"
     if not setmeup.spawn('which chromium-browser').returncode:
-        # subprocess.Popen([launcher, "--user-data-dir=" + os.getcwd() + "/.chromium-browser", "--new-window"] + args[1:], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-        if not os.path.exists("./main.py"):
+        if os.path.exists("./main.py"):
+            subprocess.Popen([launcher, "--user-data-dir=" + os.getcwd() + "/.chromium-browser", "--new-window"] + args[1:], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        else:
             os.execvp(launcher, [launcher, "--user-data-dir=" + os.getcwd() + "/.chromium-browser", "--new-window"] + args[1:])
     else:
         if not setmeup.spawn('which open').returncode:
