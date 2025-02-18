@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -x
 
 # Check if an argument is provided
 [ $# -lt 2 ] && echo "Usage: $0 old_tutorial_directory new_tutorial_directory" >&2 && exit 1
