@@ -1,4 +1,4 @@
-# fastapi_learn_tutorial_user_guide/path_params/tutorial003b.py/README.md
+# fastapi_learn_tutorial_user_guide/path_params/tutorial005.py/README.md
 
 This repository contains artifacts generated when David and Dan (D&D) executed the tutorial at [FastAPI > Learn > Tutorial - User Guide > First Steps](https://fastapi.tiangolo.com/tutorial/first-steps/).
 
@@ -24,7 +24,7 @@ Git clone current repo to your local machine
 
 Change your working directory to fastapi_learn_tutorial_user_guide repository
 
-​	`cd path/to/fastapi_learn_tutorial_user_guide/path_params/tutorial003b.py/`
+​	`cd path/to/fastapi_learn_tutorial_user_guide/path_params/tutorial005.py/`
 
 Type
 
@@ -38,7 +38,7 @@ In the shell from which you just executed `./RUNME` you should see something lik
 
              Searching for package file structure from directories with __init__.py files
              Importing from
-             /home/oy753c/desktops/neon-algorithms/fastapi_learn_tutorial_user_guide/path_params/tutorial003.py
+             /home/oy753c/desktops/neon-algorithms/fastapi_learn_tutorial_user_guide/path_params/tutorial005.py
 
     module   🐍 main.py
 
@@ -56,7 +56,7 @@ In the shell from which you just executed `./RUNME` you should see something lik
              Logs:
 
       INFO   Will watch for changes in these directories:
-             ['/home/oy753c/desktops/neon-algorithms/fastapi_learn_tutorial_user_guide/path_params/tutorial003.py']
+             ['/home/oy753c/desktops/neon-algorithms/fastapi_learn_tutorial_user_guide/path_params/tutorial005.py']
       INFO   Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
       INFO   Started reloader process [137565] using WatchFiles
       INFO   Started server process [137787]
