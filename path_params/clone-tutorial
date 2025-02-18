@@ -8,11 +8,12 @@
 [ -e $2 ] && echo "Error: $2 must NOT already exist" >&2 && exit 1
 
 cp -r $1 $2
-cd $2
+pushd $2
 rm -rf .chromium-browser __pycache__ requirements.txt runme.py setmeup.py .venv
 wget -O main.py https://github.com/fastapi/fastapi/raw/refs/heads/master/docs_src/path_params/$2
 sed -i -e "s#$1#$2#g" README.md
 
+popd
 sed -i -e "s#$1#$2#g" ../RUNME
 
 sed -i -e "s#$1#$2#g" ../../david-and-dan/launch-konsole-with-tabs.bash
