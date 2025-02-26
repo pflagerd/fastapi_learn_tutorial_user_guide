@@ -1,0 +1,10 @@
+#!/bin/bash
+if ! (which python3 >/dev/null && python3 --version | grep ' 3.' >/dev/null); then
+  echo "You must have python 3 installed to run this."
+  exit 1
+fi
+
+./SETMEUP
+! [ -f runme.py ] && cp ../../runme.py .
+[ -x $(which kate) ] && kate --new ./RUNME
+python3 $(dirname "$(readlink -f "$0")")/runme.py "http://127.0.0.1:8000/items/" "http://127.0.0.1:8000/items?skip=1" "http://127.0.0.1:8000/items?skip=20" "http://127.0.0.1:8000" "http://127.0.0.1:8000/docs" "http://127.0.0.1:8000/redoc" "http://127.0.0.1:8000/openapi.json"
