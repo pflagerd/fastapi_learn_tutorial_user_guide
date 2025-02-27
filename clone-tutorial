@@ -1,4 +1,6 @@
 #!/bin/bash -x
+myname="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/$(basename "${BASH_SOURCE[0]}")"
+mydirname=$(dirname ${myname})
 
 # Check if an argument is provided
 [ $# -lt 2 ] && echo "Usage: $0 old_tutorial_directory new_tutorial_directory" >&2 && exit 1
@@ -17,7 +19,7 @@ wget -O main.py https://github.com/fastapi/fastapi/raw/refs/heads/master/docs_sr
 sed -i -e "s#$1#$2#g" README.md
 
 popd
-sed -i -e "s#$1#$2#g" ../RUNME
+sed -i -e "s#$1#$2#g" RUNME
 
-sed -i -e "s#$1#$2#g" ../../david-and-dan/launch-konsole-with-tabs.bash
+sed -i -e "s#$1#$2#g" ../david-and-dan/launch-konsole-with-tabs.bash
 
