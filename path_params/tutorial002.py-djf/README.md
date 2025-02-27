@@ -1,4 +1,4 @@
-# fastapi_learn_tutorial_user_guide/query_params/tutorial002_py310.pyREADME.md
+# fastapi_learn_tutorial_user_guide/first_steps/tutorial001.py/README.md
 
 This repository contains artifacts generated when David and Dan (D&D) executed the tutorial at [FastAPI > Learn > Tutorial - User Guide > First Steps](https://fastapi.tiangolo.com/tutorial/first-steps/).
 
@@ -24,54 +24,47 @@ Git clone current repo to your local machine
 
 Change your working directory to fastapi_learn_tutorial_user_guide repository
 
-​	`cd path/to/fastapi_learn_tutorial_user_guide/query_params/tutorial002_py310.py`
+​	`cd path/to/fastapi_learn_tutorial_user_guide`
 
 Type
 
- ```commandline
+```commandline
 ./RUNME
 ```
 
 In the shell from which you just executed `./RUNME` you should see something like:
 ```
+
    FastAPI   Starting development server 🚀
-
+ 
              Searching for package file structure from directories with __init__.py files
-             Importing from
-             /home/oy753c/desktops/neon-algorithms/fastapi_learn_tutorial_user_guide/path_params/tutorial004.py
-
+             Importing from /home/oy753c/desktops/neon-algorithms/fastapi_learn_tutorial_user_guide
+ 
     module   🐍 main.py
-
+ 
       code   Importing the FastAPI app object from the module with the following code:
-
+ 
              from main import app
-
+ 
        app   Using import string: main:app
-
+ 
     server   Server started at http://127.0.0.1:8000
     server   Documentation at http://127.0.0.1:8000/docs
-
+ 
        tip   Running in development mode, for production use: fastapi run
-
+ 
              Logs:
-
-      INFO   Will watch for changes in these directories:
-             ['/home/oy753c/desktops/neon-algorithms/fastapi_learn_tutorial_user_guide/path_params/tutorial004.py']
+ 
+      INFO   Will watch for changes in these directories: ['/home/oy753c/desktops/neon-algorithms/fastapi_learn_tutorial_user_guide']
       INFO   Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
-      INFO   Started reloader process [137565] using WatchFiles
-      INFO   Started server process [137787]
+      INFO   Started reloader process [65407] using WatchFiles
+      INFO   Started server process [65477]
       INFO   Waiting for application startup.
       INFO   Application startup complete.
-      INFO   127.0.0.1:35806 - "GET /items/3 HTTP/1.1" 404
-      INFO   127.0.0.1:35806 - "GET /favicon.ico HTTP/1.1" 404
-      INFO   127.0.0.1:35816 - "GET / HTTP/1.1" 404
-      INFO   127.0.0.1:35816 - "GET /docs HTTP/1.1" 200
-      INFO   127.0.0.1:35816 - "GET /openapi.json HTTP/1.1" 200
-      INFO   127.0.0.1:42600 - "GET /redoc HTTP/1.1" 200
-      INFO   127.0.0.1:42600 - "GET /openapi.json HTTP/1.1" 200
-      INFO   127.0.0.1:42600 - "GET /openapi.json HTTP/1.1" 200
+      INFO   127.0.0.1:46272 - "GET / HTTP/1.1" 200
+      INFO   127.0.0.1:46272 - "GET /favicon.ico HTTP/1.1" 404
 ```
 
 In a new browser window or tab, you should see something like this:
 
-![Image](https://github.com/user-attachments/assets/24e4f39a-13ba-4e21-b738-b3db2cc9c834)
+![image](https://github.com/user-attachments/assets/d2fc96ae-722b-464c-942d-5cb6f44d5ac4)
