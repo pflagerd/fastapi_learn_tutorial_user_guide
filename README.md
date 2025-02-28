@@ -5,7 +5,7 @@ This repository contains artifacts created by David and Dan (D&D) when they exec
 <br>
 
 ## TODO
-Work through Query Parameters: #54
+See [david-and-dan issues](https://github.com/pflagerd/david-and-dan/issues).
 
 <br>
 
