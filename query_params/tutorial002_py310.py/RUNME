@@ -7,4 +7,4 @@ fi
 ./SETMEUP
 ! [ -f runme.py ] && cp ../../runme.py .
 [ -x $(which kate) ] && kate --new ./RUNME
-python3 $(dirname "$(readlink -f "$0")")/runme.py "http://127.0.0.1:8000/items/" "http://127.0.0.1:8000/items?skip=1" "http://127.0.0.1:8000/items?skip=20" "http://127.0.0.1:8000" "http://127.0.0.1:8000/docs" "http://127.0.0.1:8000/redoc" "http://127.0.0.1:8000/openapi.json"
+python3 $(dirname "$(readlink -f "$0")")/runme.py "http://127.0.0.1:8000/items/foo" "http://127.0.0.1:8000/items/foo=bar" "http://127.0.0.1:8000/items/thing?foo=bar" "http://127.0.0.1:8000/items/thing?q" "http://127.0.0.1:8000/items/thing?q=123" "http://127.0.0.1:8000/items/thing?Q=123" "http://127.0.0.1:8000" "http://127.0.0.1:8000/docs" "http://127.0.0.1:8000/redoc" "http://127.0.0.1:8000/openapi.json"
