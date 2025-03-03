@@ -4,4 +4,4 @@ if ! (which python3 >/dev/null && python3 --version | grep ' 3.' >/dev/null); th
   exit 1
 fi
 
-python3 $(dirname "$(readlink -f "$0")")/runme.py "https://fastapi.tiangolo.com/tutorial/query-params/#defaults:~:text=the%20default%20value-,Optional%20parameters,%C2%B6,-The%20same%20way" "https://github.com/fastapi/fastapi/blob/master/docs_src/query_params/tutorial002_py310.py" "https://github.com/pflagerd/fastapi_learn_tutorial_user_guide/tree/master/query_params/tutorial002_py310.py"
+python3 $(dirname "$(readlink -f "$0")")/runme.py "https://fastapi.tiangolo.com/tutorial/query-params/#optional-parameters:~:text=a%20query%20parameter.-,Query%20parameter%20type%20conversion,%F0%9F%A4%93%20Other%20versions%20and%20variants,-In%20this%20case" "https://github.com/fastapi/fastapi/blob/master/docs_src/query_params/tutorial002_py310.py" "https://github.com/pflagerd/fastapi_learn_tutorial_user_guide/tree/master/query_params/tutorial002_py310.py"

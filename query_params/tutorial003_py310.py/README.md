@@ -1,6 +1,6 @@
-# fastapi_learn_tutorial_user_guide/query_params/tutorial002_py310.pyREADME.md
+# fastapi_learn_tutorial_user_guide/query_params/tutorial003_py310.py/README.md
 
-This repository contains artifacts generated when David and Dan (D&D) executed the tutorial at [FastAPI > Learn > Tutorial - User Guide > First Steps](https://fastapi.tiangolo.com/tutorial/first-steps/).
+This repository contains artifacts generated when David and Dan (D&D) executed the tutorial at [FastAPI > Learn > Tutorial - User Guide](https://fastapi.tiangolo.com/tutorial).
 
 <br>
 
@@ -24,7 +24,7 @@ Git clone current repo to your local machine
 
 Change your working directory to fastapi_learn_tutorial_user_guide repository
 
-​	`cd path/to/fastapi_learn_tutorial_user_guide/query_params/tutorial002_py310.py`
+​	`cd path/to/fastapi_learn_tutorial_user_guide/query_params/tutorial003_py310.py`
 
 Type
 
@@ -38,7 +38,7 @@ In the shell from which you just executed `./RUNME` you should see something lik
 
              Searching for package file structure from directories with __init__.py files
              Importing from
-             /home/oy753c/desktops/neon-algorithms/fastapi_learn_tutorial_user_guide/path_params/tutorial004.py
+             /home/oy753c/desktops/neon-algorithms/david-and-dan/fastapi_learn_tutorial_user_guide/query_params/tutorial003_py310.py
 
     module   🐍 main.py
 
@@ -56,20 +56,15 @@ In the shell from which you just executed `./RUNME` you should see something lik
              Logs:
 
       INFO   Will watch for changes in these directories:
-             ['/home/oy753c/desktops/neon-algorithms/fastapi_learn_tutorial_user_guide/path_params/tutorial004.py']
+             ['/home/oy753c/desktops/neon-algorithms/david-and-dan/fastapi_learn_tutorial_user_guide/query_params/tutorial003_py310.py
+             ']
       INFO   Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
-      INFO   Started reloader process [137565] using WatchFiles
-      INFO   Started server process [137787]
+      INFO   Started reloader process [44912] using WatchFiles
+      INFO   Started server process [45525]
       INFO   Waiting for application startup.
       INFO   Application startup complete.
-      INFO   127.0.0.1:35806 - "GET /items/3 HTTP/1.1" 404
-      INFO   127.0.0.1:35806 - "GET /favicon.ico HTTP/1.1" 404
-      INFO   127.0.0.1:35816 - "GET / HTTP/1.1" 404
-      INFO   127.0.0.1:35816 - "GET /docs HTTP/1.1" 200
-      INFO   127.0.0.1:35816 - "GET /openapi.json HTTP/1.1" 200
-      INFO   127.0.0.1:42600 - "GET /redoc HTTP/1.1" 200
-      INFO   127.0.0.1:42600 - "GET /openapi.json HTTP/1.1" 200
-      INFO   127.0.0.1:42600 - "GET /openapi.json HTTP/1.1" 200
+      INFO   127.0.0.1:58876 - "GET /items/foo?short=0 HTTP/1.1" 200
+      INFO   127.0.0.1:58876 - "GET /favicon.ico HTTP/1.1" 404
 ```
 
 In a new browser window or tab, you should see something like this:
