@@ -20,6 +20,7 @@ def if_kubuntu_package_not_installed_install_it_now(package):
     if response.returncode:
         raise RuntimeError("Something went wrong: " + response.stderr)
 
+
 def is_kubuntu():
     if not os.path.exists("/etc/os-release"):
         return False
@@ -61,6 +62,7 @@ def main(args, debug=False):
         if debug:
             print(spawn_result)
 
+
 def spawn(command_line):
     process = subprocess.run(
         command_line.split(),
@@ -74,11 +76,11 @@ def spawn(command_line):
         returncode=process.returncode
     )
 
+
 def version_info_tuple_to_str(version_info_tuple):
     s = ""
     for version_info in version_info_tuple:
         if s:
-            s += ", "
             s += ", "
         s += str(version_info[0]) + "." + str(version_info[1]) + "." + str(version_info[2])
     return s
