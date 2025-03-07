@@ -69,4 +69,4 @@ In the shell from which you just executed `./RUNME` you should see something lik
 
 In a new browser window or tab, you should see something like this:
 
-![Image](https://github.com/user-attachments/assets/24e4f39a-13ba-4e21-b738-b3db2cc9c834)
+![Image](https://github.com/user-attachments/assets/723074cd-a57a-4b8e-b97a-45b0b7b6078e)
