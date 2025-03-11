@@ -4,6 +4,10 @@ if ! (which python3 >/dev/null && python3 --version | grep ' 3.' >/dev/null); th
   exit 1
 fi
 
+pushd pushd script_dir=$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)
+
 ! [ -f setmeup.py ] && cp ../../setmeup.py .
 ! [ -f requirements.txt ] && cp ../../requirements.txt .
 python3 $(dirname "$(readlink -f "$0")")/setmeup.py
+
+popd
