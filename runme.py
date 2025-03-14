@@ -6,25 +6,13 @@ import sys
 
 def main(args, debug=False):
     launcher = "chromium-browser"
-    if not setmeup.spawn('which chromium-browser').returncode:
-        if os.path.exists("./main.py"):
-            subprocess.Popen([launcher, "--user-data-dir=" + os.getcwd() + "/.chromium-browser", "--new-window"] + args[1:], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-        else:
-            os.execvp(launcher, [launcher, "--user-data-dir=" + os.getcwd() + "/.chromium-browser", "--new-window"] + args[1:])
-    else:
-        if not setmeup.spawn('which open').returncode:
-            launcher = "open"
-        elif not setmeup.spawn('which gio').returncode:
-            launcher = "gio"
-        else:
-            print('Neither chromium-browser, open nor gio is available in your PATH, cannot launch default browser', file=sys.stderr)
-
-        for tab in tabs:
-            subprocess.Popen([launcher, tab], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    if setmeup.spawn('which chromium-browser').returncode:
+        raise RuntimeError("This script requires chromium-browser to be installed")
 
     if os.path.exists("./main.py"):
-        os.execvp(".venv/bin/fastapi", [".venv/bin/fastapi", "dev", "main.py"])
-
+        subprocess.Popen([launcher, "--user-data-dir=" + os.getcwd() + "/.chromium-browser", "--new-window"] + args[1:], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    else:
+        os.execvp(launcher, [launcher, "--user-data-dir=" + os.getcwd() + "/.chromium-browser", "--new-window"] + args[1:])
 if __name__ == "__main__":
     sys.exit(main(sys.argv))
 
