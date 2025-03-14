@@ -15,7 +15,7 @@ def has_apt():
 
 def if_package_not_installed_install_it_now(package):
     if not has_apt():
-        raise RuntimeError("This script has only been tested on systems with the apt package manager.")
+        raise RuntimeError("This script has only been tested on systems having the apt package manager.")
 
     # is package installed?
     # Do something like this bash command: sudo apt list --installed | grep python3-venv3
