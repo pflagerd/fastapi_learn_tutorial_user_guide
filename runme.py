@@ -5,8 +5,6 @@ import subprocess
 import sys
 
 def main(args, debug=False):
-    setmeup.main([])
-
     launcher = "chromium-browser"
     if not setmeup.spawn('which chromium-browser').returncode:
         if os.path.exists("./main.py"):
