@@ -8,24 +8,14 @@ import sys
 import time
 from types import SimpleNamespace
 
-def get_os():
-    # Get basic OS info
-    os_name = platform.system()
 
-    if os_name == "Linux":
-        # Get detailed Linux distribution info
-        return distro.name(pretty=True)  # Pretty format like "Kubuntu 24.10"
-    else:
-        # For non-Linux systems
-        os_release = platform.release()
-        return f"{os_name} {os_release}"
+def has_apt():
+    return not spawn("which apt").returncode
 
 
-def if_kubuntu_package_not_installed_install_it_now(package):
-    if not is_kubuntu():
-        my_os = get_os()
-        supported_os_versions = ["Kubuntu 24.10", "Kubuntu 24.04"]
-        raise RuntimeError(f"You are running this script on {my_os}. This script has been tested on {supported_os_versions}.")
+def if_package_not_installed_install_it_now(package):
+    if not has_apt():
+        raise RuntimeError("This script has only been tested on systems with the apt package manager.")
 
     # is package installed?
     # Do something like this bash command: sudo apt list --installed | grep python3-venv3
@@ -35,13 +25,6 @@ def if_kubuntu_package_not_installed_install_it_now(package):
     response = spawn(f"sudo apt install {package} -y")
     if response.returncode:
         raise RuntimeError("Something went wrong: " + response.stderr)
-
-
-def is_kubuntu():
-    if not os.path.exists("/etc/os-release"):
-        return False
-
-    return "Ubuntu" in open("/etc/os-release").read()
 
 
 def main(args, debug=False):
@@ -59,8 +42,8 @@ def main(args, debug=False):
     if debug:
         print(script_directory)  # Does script_directory contain a trailing '/'?  No.
 
-    if_kubuntu_package_not_installed_install_it_now("python3-pip")
-    if_kubuntu_package_not_installed_install_it_now("python3-venv")
+    if_package_not_installed_install_it_now("python3-pip")
+    if_package_not_installed_install_it_now("python3-venv")
 
     if not os.path.exists(script_directory + "/.venv"):  # if
         spawn_result = spawn("python3 -m venv .venv")
@@ -91,6 +74,7 @@ def spawn(command_line):
         stderr=process.stderr.decode('utf-8'),
         returncode=process.returncode
     )
+
 
 def version_info_tuple_to_str(version_info_tuple):
     s = ""
