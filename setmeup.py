@@ -30,7 +30,7 @@ def if_package_not_installed_install_it_now(package):
 def main(args, debug=False):
     supported_python_versions = [(3, 11, 2), (3, 12, 3), (3, 12, 7), (3, 13, 0)]
     if (sys.version_info.major, sys.version_info.minor, sys.version_info.micro) not in supported_python_versions:
-        print("Current version " + sys.version.split()[0] + " not tested.  Must be one of " + list_of_version_tuples_to_string(supported_python_versions), file=sys.stderr)
+        print("Current version " + sys.version.split()[0] + " not tested.  Must be one of " + convert_list_of_version_tuples_to_string(supported_python_versions), file=sys.stderr)
         sys.exit(1)
 
     if debug:
@@ -61,6 +61,8 @@ def main(args, debug=False):
         if debug:
             print(spawn_result)
 
+    return 0
+
 
 def spawn(command_line):
     process = subprocess.run(
@@ -76,12 +78,12 @@ def spawn(command_line):
     )
 
 
-def list_of_version_tuples_to_string(version_info_tuple):
+def convert_list_of_version_tuples_to_string(list_of_version_tuples):
     s = ""
-    for version_info in version_info_tuple:
+    for version_tuple in list_of_version_tuples:
         if s:
             s += ", "
-        s += str(version_info[0]) + "." + str(version_info[1]) + "." + str(version_info[2])
+        s += str(version_tuple[0]) + "." + str(version_tuple[1]) + "." + str(version_tuple[2])
     return s
 
 
