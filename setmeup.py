@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-import distro
 import os
 import os.path
 import platform
@@ -56,7 +55,8 @@ def main(args, debug=False):
     if debug:
         print(f'stdout == {stdout}')
 
-    if not stdout:
+    requirements_txt = open("requirements.txt", "r").read()
+    if stdout != requirements_txt:
         spawn_result = spawn(".venv/bin/pip install -r requirements.txt")
         if debug:
             print(spawn_result)
