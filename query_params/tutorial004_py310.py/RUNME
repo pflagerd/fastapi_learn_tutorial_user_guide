@@ -11,4 +11,4 @@ cd $(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)
 [ -f runme.py ] || cp ../../runme.py .
 [ -x $(which kate) ] && kate --new ./RUNME &
 
-exec python3 ./runme.py "http://127.0.0.1:8000/items/foo?short=0" "http://127.0.0.1:8000/items/foo?short=1" "http://127.0.0.1:8000/items/foo?short=False" "http://127.0.0.1:8000/items/foo?short=True" "http://127.0.0.1:8000/items/foo?short=false" "http://127.0.0.1:8000/items/foo?short=true" "http://127.0.0.1:8000/items/foo?short=off" "http://127.0.0.1:8000/items/foo?short=on" "http://127.0.0.1:8000/items/foo?short=no" "http://127.0.0.1:8000/items/foo?short=yes" "http://127.0.0.1:8000/items/foo?short=ofF" "http://127.0.0.1:8000/items/foo?short=yEs" "http://127.0.0.1:8000" "http://127.0.0.1:8000/docs" "http://127.0.0.1:8000/redoc" "http://127.0.0.1:8000/openapi.json"
+exec python3 ./runme.py "http://127.0.0.1:8000" "http://127.0.0.1:8000/docs" "http://127.0.0.1:8000/redoc" "http://127.0.0.1:8000/openapi.json" "http://127.0.0.1:8000/users/1/items/item-1?q=a&short=false"
