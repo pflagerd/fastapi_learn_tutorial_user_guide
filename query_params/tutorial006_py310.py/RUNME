@@ -9,6 +9,5 @@ cd $(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)
 ./SETMEUP || exit $?  # return SETMEUP's
 
 [ -f runme.py ] || cp ../../runme.py .
-[ -x $(which kate) ] && kate --new ./RUNME &
 
 exec python3 ./runme.py "http://127.0.0.1:8000" "http://127.0.0.1:8000/docs" "http://127.0.0.1:8000/redoc" "http://127.0.0.1:8000/openapi.json" "http://127.0.0.1:8000/users/1/items/item-1?q=a&short=false"
