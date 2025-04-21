@@ -1,9 +1,10 @@
 [Required Query Parameters](https://fastapi.tiangolo.com/tutorial/query-params/#required-query-parameters)
 
 
-1. Select the next chunk (based on the existence of the sub-title font.  Here's what the sub-title looks like:
+1. From Chromium Instance 2, Tab 1, navigate to the next tutorial or the next chunk of the current tutorial (based on the existence of the sub-title font).
+     e.g. Here's what the sub-title looks like:
 
-![Image](https://github.com/user-attachments/assets/87a516aa-6cf3-4bd5-a5a3-f9e01148cadb)
+      ![Image](https://github.com/user-attachments/assets/87a516aa-6cf3-4bd5-a5a3-f9e01148cadb)
 
 2. Update fastapi_learn_tutorial_user_guide/RUNME to show the correct tutorial in Chromium Instance 2, Tab 1.
 3. Read the tutorial until we encounter some code:
