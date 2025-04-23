@@ -21,7 +21,7 @@
 
      ![image](https://github.com/user-attachments/assets/b5097f1c-88b4-43a7-b31f-c56b0d0917ae)
 
-11. Decide how to test the assertions made in the tutorial. One test case is implied by the tutorial text:
+11. Decide how to test the statements made in the tutorial. One test case is implied by the tutorial text:
 
      ![Image](https://github.com/user-attachments/assets/606eb18d-4328-40dd-94ea-e976e1aede61)
 
