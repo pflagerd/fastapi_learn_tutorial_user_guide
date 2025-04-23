@@ -8,4 +8,4 @@ cd $(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)
 
 [ -x $(which kate) ] && kate --new ../RUNME ./RUNME query_params/tutorial006_py310.py/RUNME &
 
-python3 $(dirname "$(readlink -f "$0")")/runme.py "https://fastapi.tiangolo.com/tutorial/query-params/#__tabbed_9_1" "https://github.com/fastapi/fastapi/blob/master/docs_src/query_params/tutorial006_py310.py" "https://github.com/pflagerd/fastapi_learn_tutorial_user_guide/tree/master/query_params/tutorial006_py310.py"
+python3 $(dirname "$(readlink -f "$0")")/runme.py "https://fastapi.tiangolo.com/tutorial/body/" "https://github.com/fastapi/fastapi/blob/master/docs_src/query_params/tutorial006_py310.py" "https://github.com/pflagerd/fastapi_learn_tutorial_user_guide/tree/master/query_params/tutorial006_py310.py"
