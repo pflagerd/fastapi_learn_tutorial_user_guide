@@ -15,7 +15,7 @@
 5.  From Konsole tab 3, press Ctrl-C to terminate the currently running app: tutorial004_py310.py
 6.  `cd ../../ # fastapi_learn_tutorial_user_guide`
 7. `./clone-tutorial query_params/tutorial004_py310.py query_params/tutorial005.py`
-8. `cd fastapi_learn_tutorial_user_guide/tutorial005.py`
+8. `cd query_params/tutorial005.py`
 9. `./RUNME`
 10. Observe that a new Chrome window appears with several tabs open:
 
