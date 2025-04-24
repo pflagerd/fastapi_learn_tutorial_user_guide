@@ -36,4 +36,11 @@
      git commit -m "new tutorial"
      git push
     ```
-20. Now continue with Step 1 above.
+13. Terminate the konsole session. This will close all the open windows.
+14. Rerun in a new konsole session as follows:
+    ```
+    cd .../david-and-dan
+    ./RUNME
+    ```
+15. If there are any missing things, fix them.
+16. Now continue with Step 1 above.
