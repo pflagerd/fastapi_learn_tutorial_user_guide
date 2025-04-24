@@ -26,7 +26,8 @@
      ![Image](https://github.com/user-attachments/assets/606eb18d-4328-40dd-94ea-e976e1aede61)
 
 12. From another konsole tab, or from a kate terminal pane execute the following:
-    ```cd ../../../ # david-and-dan
+    ```bash
+     cd ../ # david-and-dan
      git add .
      git commit -m "new tutorial"
      cd fastapi_learn_tutorial_user_guide
