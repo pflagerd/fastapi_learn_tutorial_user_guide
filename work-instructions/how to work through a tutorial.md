@@ -14,8 +14,8 @@
 4. In Chromium Instance 2, Tab2, navigate to https://github.com/fastapi/fastapi/blob/master/docs_src/query_params.  Observe some .py files which might be the code we see above. By inspection we determine that the file we want is tutorial005.py
 5.  From Konsole tab 3, press Ctrl-C to terminate the currently running app: tutorial004_py310.py
 6.  `cd ../../ # fastapi_learn_tutorial_user_guide`
-7. `./clone-tutorial query_params/tutorial004_py310.py query_params/tutorial005.py
-8. `cd fastapi_learn_tutorial_user_guide/tutorial005.py`
+7. `./clone-tutorial query_params/tutorial004_py310.py query_params/tutorial005.py`
+8. `cd query_params/tutorial005.py`
 9. `./RUNME`
 10. Observe that a new Chrome window appears with several tabs open:
 
@@ -25,10 +25,15 @@
 
      ![Image](https://github.com/user-attachments/assets/606eb18d-4328-40dd-94ea-e976e1aede61)
 
-12. `cd ../../../ # david-and-dan`
-13. `git add .`
-14. `git commit -m "new tutorial"`
-15. `cd fastapi_learn_tutorial_user_guide`
-16. `git add .`
-17. `git commit -m "new tutorial"`
-18. Now continue with Step 1 above.
+12. From another konsole tab, or from a kate terminal pane execute the following:
+    ```bash
+     cd ../ # david-and-dan
+     git add .
+     git commit -m "new tutorial"
+     git push
+     cd fastapi_learn_tutorial_user_guide
+     git add .
+     git commit -m "new tutorial"
+     git push
+    ```
+20. Now continue with Step 1 above.
