@@ -25,10 +25,12 @@
 
      ![Image](https://github.com/user-attachments/assets/606eb18d-4328-40dd-94ea-e976e1aede61)
 
-12. `cd ../../../ # david-and-dan`
-13. `git add .`
-14. `git commit -m "new tutorial"`
-15. `cd fastapi_learn_tutorial_user_guide`
-16. `git add .`
-17. `git commit -m "new tutorial"`
-18. Now continue with Step 1 above.
+12. From another konsole tab, or from a kate terminal pane execute the following:
+    ```cd ../../../ # david-and-dan
+     git add .
+     git commit -m "new tutorial"
+     cd fastapi_learn_tutorial_user_guide
+     git add .
+     git commit -m "new tutorial"
+    ```
+20. Now continue with Step 1 above.
