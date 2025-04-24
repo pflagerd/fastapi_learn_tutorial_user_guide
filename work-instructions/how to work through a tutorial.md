@@ -30,8 +30,10 @@
      cd ../ # david-and-dan
      git add .
      git commit -m "new tutorial"
+     git push
      cd fastapi_learn_tutorial_user_guide
      git add .
      git commit -m "new tutorial"
+     git push
     ```
 20. Now continue with Step 1 above.
