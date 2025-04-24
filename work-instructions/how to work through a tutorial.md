@@ -14,7 +14,7 @@
 4. In Chromium Instance 2, Tab2, navigate to https://github.com/fastapi/fastapi/blob/master/docs_src/query_params.  Observe some .py files which might be the code we see above. By inspection we determine that the file we want is tutorial005.py
 5.  From Konsole tab 3, press Ctrl-C to terminate the currently running app: tutorial004_py310.py
 6.  `cd ../../ # fastapi_learn_tutorial_user_guide`
-7. `./clone-tutorial query_params/tutorial004_py310.py query_params/tutorial005.py
+7. `./clone-tutorial query_params/tutorial004_py310.py query_params/tutorial005.py`
 8. `cd fastapi_learn_tutorial_user_guide/tutorial005.py`
 9. `./RUNME`
 10. Observe that a new Chrome window appears with several tabs open:
