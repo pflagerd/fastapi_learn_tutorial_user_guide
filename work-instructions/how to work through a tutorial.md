@@ -21,11 +21,15 @@
 
      ![image](https://github.com/user-attachments/assets/b5097f1c-88b4-43a7-b31f-c56b0d0917ae)
 
-11. Decide how to test the statements made in the tutorial. One test case is implied by the tutorial text:
+11. Observe in konsole tab 3 that `query_params/tutorial005.py` is running:
+
+     ![image](https://github.com/user-attachments/assets/da4811c9-3576-47e0-9b4b-015b23fe2bfb)
+
+12. Decide how to test the statements made in the tutorial. One test case is implied by the tutorial text:
 
      ![Image](https://github.com/user-attachments/assets/606eb18d-4328-40dd-94ea-e976e1aede61)
 
-12. From another konsole tab, or from a kate terminal pane execute the following:
+13. From another konsole tab, or from a kate terminal pane execute the following:
     ```bash
      cd ../ # david-and-dan
      git add .
@@ -36,11 +40,11 @@
      git commit -m "new tutorial"
      git push
     ```
-13. Terminate the konsole session. This will close all the open windows.
-14. Rerun in a new konsole session as follows:
+14. Terminate the konsole session. This will close all the open windows.
+15. Rerun in a new konsole session as follows:
     ```
     cd .../david-and-dan
     ./RUNME
     ```
-15. If there are any missing things, fix them.
-16. Now continue with Step 1 above.
+16. If there are any missing things, fix them.
+17. Now continue with Step 1 above.
