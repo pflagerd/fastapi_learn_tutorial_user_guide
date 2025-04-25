@@ -34,7 +34,7 @@
 
 10. From another konsole tab or from a kate terminal pane execute the following:
     ```bash
-     cd ../ # david-and-dan
+     cd ../../../ # david-and-dan
      git add .
      git commit -m "new tutorial"
      git push
