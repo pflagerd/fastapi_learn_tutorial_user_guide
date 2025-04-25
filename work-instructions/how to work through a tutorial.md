@@ -32,7 +32,7 @@
 
      ![Image](https://github.com/user-attachments/assets/606eb18d-4328-40dd-94ea-e976e1aede61)
 
-10. From another konsole tab, or from a kate terminal pane execute the following:
+10. From another konsole tab or from a kate terminal pane execute the following:
     ```bash
      cd ../ # david-and-dan
      git add .
