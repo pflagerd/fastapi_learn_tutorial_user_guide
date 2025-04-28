@@ -6,6 +6,9 @@ fi
 
 cd $(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)
 
-[ -x $(which kate) ] && kate --new ../RUNME ./RUNME body/tutorial003_py310.py/RUNME &
+[ -x $(which kate) ] && kate --new ../RUNME ./RUNME body/tutorial004_py310.py/RUNME &
 
-python3 $(dirname "$(readlink -f "$0")")/runme.py "https://fastapi.tiangolo.com/tutorial/body/#request-body-path-parameters" "https://github.com/fastapi/fastapi/blob/master/docs_src/body/tutorial003_py310.py" "https://github.com/pflagerd/fastapi_learn_tutorial_user_guide/tree/master/body/tutorial003_py310.py"
+python3 $(dirname "$(readlink -f "$0")")/runme.py "https://fastapi.tiangolo.com/tutorial/body/#request-body-path-query-parameters" "https://github.com/fastapi/fastapi/blob/master/docs_src/body/tutorial004_py310.py" "https://github.com/pflagerd/fastapi_learn_tutorial_user_guide/tree/master/body/tutorial004_py310.py"
+
+
+
