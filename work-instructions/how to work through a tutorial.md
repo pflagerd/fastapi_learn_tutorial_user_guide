@@ -11,10 +11,13 @@
 
      ![Image](https://github.com/user-attachments/assets/eab3c212-b07c-4818-a331-6033fd0af548)
 
-4. In Chromium Instance 2, Tab 2, make a mental note of the current directory in the URL.  Let's give it an abstract name *old-tutorial-name*.
-5. Navigate to the parent directory of *old-tutorial-name*.  Observe some .py files which might be the code we see above. Based on the number in name of the last directory (.e.g. tutorial003_py310.py contains the number 003), look for another with the next number in sequence (e.g. 004 in this case). Find the one that matches the code in the tutorial. Let's give an abstract name to the one we found: *new-tutorial-name*
-6.  From Konsole tab 3, press Ctrl-C to terminate the currently running *old-tutorial-name*
-7.  Execute the following:
+4. In Chromium Instance 2, Tab 2, make a mental note of the part of the URL following `fastapi/docs_src`. e.g.
+   ![image](https://github.com/user-attachments/assets/d66aaa2f-588b-4d68-85aa-65545b894325)
+
+6. In this example make a mental note of `query_params_str_validations/tutorial001_py310.py`.  Let's create a kind of mental variable name which we will call *old-tutorial-name* to refer to its contents (in this case `query_params_str_validations/tutorial001_py310.py`)
+7. Navigate to the parent directory of *old-tutorial-name*.  Observe some .py files which might be the code we see above. Based on the number in name of the last directory (.e.g. tutorial003_py310.py contains the number 003), look for another with the next number in sequence (e.g. 004 in this case). Find the one that matches the code in the tutorial. Let's give an abstract name to the one we found: *new-tutorial-name*
+8.  From Konsole tab 3, press Ctrl-C to terminate the currently running *old-tutorial-name*
+9.  Execute the following:
    ``` bash
      cd ../../ # fastapi_learn_tutorial_user_guide
      ./clone-tutorial query_params/tutorial004_py310.py query_params/tutorial005.py
