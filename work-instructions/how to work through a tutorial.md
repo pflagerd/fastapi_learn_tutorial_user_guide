@@ -29,10 +29,6 @@
 
      ![image](https://github.com/user-attachments/assets/da4811c9-3576-47e0-9b4b-015b23fe2bfb)
 
-9. Decide how to test the statements made in the tutorial. One test case is implied by the tutorial text:
-
-     ![Image](https://github.com/user-attachments/assets/606eb18d-4328-40dd-94ea-e976e1aede61)
-
 10. From another konsole tab or from a kate terminal pane execute the following:
     ```bash
      cd ../../../ # david-and-dan
@@ -51,4 +47,8 @@
     ./RUNME
     ```
 13. If there are any missing things, fix them.
-14. Now continue with Step 1 above.
+14. Decide how to test the statements made in the tutorial. One test case is implied by the tutorial text:
+
+     ![Image](https://github.com/user-attachments/assets/606eb18d-4328-40dd-94ea-e976e1aede61)
+
+15. Now continue with Step 1 above.
