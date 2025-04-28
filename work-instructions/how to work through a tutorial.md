@@ -46,9 +46,14 @@
     cd .../david-and-dan
     ./RUNME
     ```
-13. If there are any missing things, fix them.
-14. Decide how to test the statements made in the tutorial. One test case is implied by the tutorial text:
+13. Observe that there are three Chromium instances as before, and a Konsole instance now with three tabs.
+14. Observe that Konsole tab 3 is running *new-tutorial_name*
+15. Observe that Chromium instance 2, Tab 1 is showing the new tutorial page.
+16. Observe that Chromium instance 2, Tab 2 is showing *new-tutorial-name* under the fastapi repo directory `fastapi/docs_src/`.
+16. Observe that Chromium instance 2, Tab 3 is showing *new-tutorial-name* under the `fastapi_learn_tutorial_user_guide/` directory
+17. Observe that Chromium instance 3, Tab 2, shows `127.0.0.1:8000/docs` and when fully expanded shows the expected Parameters as defined in the tutorial's code.
+18. Decide how to test the statements made in the tutorial. One test case is implied by the tutorial text:
 
      ![Image](https://github.com/user-attachments/assets/606eb18d-4328-40dd-94ea-e976e1aede61)
 
-15. Now continue with Step 1 above.
+19. Now continue with Step 1 above.
