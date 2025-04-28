@@ -9,19 +9,20 @@
 2. Observe that the name of the URL for the current tutorial has a "suffix". e.g.
    ![image](https://github.com/user-attachments/assets/ab2f3d0c-4f49-4513-a528-653dda557eea)
 
-3. In this example, the suffix is `query-params-str-validations`.  This will be important later in this work instruction.
-4. Update fastapi_learn_tutorial_user_guide/RUNME to show the correct tutorial in Chromium Instance 2, Tab 1.
-5. Read the tutorial until we encounter some code. Here's an old example:
+3. In this example, the "suffix" is `query-params-str-validations`.
+4. Let's create a kind of mental variable name which we will call *new-tutorial-directory*. We will use this variable name to refer to this "suffix" (e.g. `query-params-str-validations`) later in this work instruction.
+5. Update fastapi_learn_tutorial_user_guide/RUNME to show the correct tutorial in Chromium Instance 2, Tab 1.
+6. Read the tutorial until we encounter some code. Here's an old example:
 
      ![Image](https://github.com/user-attachments/assets/eab3c212-b07c-4818-a331-6033fd0af548)
 
-6. In Chromium Instance 2, Tab 2, make a mental note of the part of the URL following `fastapi/docs_src`. e.g.
+7. In Chromium Instance 2, Tab 2, make a mental note of the part of the URL following `fastapi/docs_src`. e.g.
    ![image](https://github.com/user-attachments/assets/d66aaa2f-588b-4d68-85aa-65545b894325)
 
-7. In this example make a mental note of `query_params_str_validations/tutorial001_py310.py`.  Let's create a kind of mental variable name which we will call *old-tutorial-name* to refer to its contents (in this case `query_params_str_validations/tutorial001_py310.py`)
-8. Navigate to the parent directory of *old-tutorial-name*.  Observe some .py files which might be the code we see above. Based on the number in name of the last directory (.e.g. tutorial003_py310.py contains the number 003), look for another with the next number in sequence (e.g. 004 in this case). Find the one that matches the code in the tutorial. Let's give an abstract name to the one we found: *new-tutorial-name*
-9.  From Konsole tab 3, press Ctrl-C to terminate the currently running *old-tutorial-name*
-10.  Execute the following:
+8. In this example that part is `query_params_str_validations/tutorial001_py310.py`.  Let's create a kind of mental variable name which we will call *old-tutorial-name* to refer to its contents (in this case `query_params_str_validations/tutorial001_py310.py`)
+9. TODO (FIX THIS STEP). Navigate to the parent directory of *old-tutorial-name*.  Observe some .py files which might be the code we see above. Based on the number in name of the last directory (.e.g. tutorial003_py310.py contains the number 003), look for another with the next number in sequence (e.g. 004 in this case). Find the one that matches the code in the tutorial. Let's give an abstract name to the one we found: *new-tutorial-name*
+10.  From Konsole tab 3, press Ctrl-C to terminate the currently running *old-tutorial-name*
+11.  Execute the following:
    ``` bash
      cd ../../ # fastapi_learn_tutorial_user_guide
      ./clone-tutorial query_params/tutorial004_py310.py query_params/tutorial005.py
