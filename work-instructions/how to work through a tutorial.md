@@ -25,7 +25,7 @@
 11.  Execute the following:
    ``` bash
      cd ../../ # fastapi_learn_tutorial_user_guide
-     ./clone-tutorial query_params/tutorial004_py310.py query_params/tutorial005.py
+     ./clone-tutorial *old-tutorial-name* *new-tutorial-name*
      cd query_params/tutorial005.py
      ./RUNME
    ```
