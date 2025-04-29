@@ -26,7 +26,7 @@
    ``` bash
      cd ../../ # fastapi_learn_tutorial_user_guide
      ./clone-tutorial *old-tutorial-name* *new-tutorial-name*
-     cd query_params/tutorial005.py
+     cd *new-tutorial-name*
      ./RUNME
    ```
 11. Observe that a new Chrome window appears with several tabs open:
