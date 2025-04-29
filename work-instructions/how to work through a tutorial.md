@@ -6,12 +6,12 @@
 
      ![Image](https://github.com/user-attachments/assets/87a516aa-6cf3-4bd5-a5a3-f9e01148cadb)
 
-2. Observe that the name of the URL for the current tutorial has a "suffix". e.g.
+2. Update fastapi_learn_tutorial_user_guide/RUNME to show the correct tutorial in Chromium Instance 2, Tab 1.
+3. Observe that the name of the URL for the current tutorial has a "suffix". e.g.
    ![image](https://github.com/user-attachments/assets/ab2f3d0c-4f49-4513-a528-653dda557eea)
 
-3. In this example, the "suffix" is `query-params-str-validations`.
-4. Let's create a kind of mental variable name which we will call *new-tutorial-directory*. We will use this variable name to refer to this "suffix" (e.g. `query-params-str-validations`) later in this work instruction.
-5. Update fastapi_learn_tutorial_user_guide/RUNME to show the correct tutorial in Chromium Instance 2, Tab 1.
+4. In this example, the "suffix" is `query-params-str-validations`.
+5. Let's create a kind of mental variable name which we will call *new-tutorial-directory*. We will use this variable name to refer to this "suffix" (e.g. `query-params-str-validations`) later in this work instruction.
 6. Read the tutorial until we encounter some code. Here's an old example:
 
      ![Image](https://github.com/user-attachments/assets/eab3c212-b07c-4818-a331-6033fd0af548)
