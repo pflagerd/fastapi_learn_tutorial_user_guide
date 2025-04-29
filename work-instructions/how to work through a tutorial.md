@@ -29,7 +29,7 @@
      cd *new-tutorial-name*
      ./RUNME
    ```
-11. Observe that a new Chrome window appears with several tabs open:
+11. Observe that a new Chromium window appears with several tabs open:
 
      ![image](https://github.com/user-attachments/assets/b5097f1c-88b4-43a7-b31f-c56b0d0917ae)
 
