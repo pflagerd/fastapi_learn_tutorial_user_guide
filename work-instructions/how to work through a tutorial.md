@@ -20,16 +20,16 @@
    ![image](https://github.com/user-attachments/assets/d66aaa2f-588b-4d68-85aa-65545b894325)
 
 8. In this example that part is `query_params_str_validations/tutorial001_py310.py`.  Let's create another mental variable name called *old-tutorial-name* to refer to that part of the URL (in this case `query_params_str_validations/tutorial001_py310.py`)
-9. TODO (FIX THIS STEP). Navigate to the parent directory of *old-tutorial-name*.  Observe some .py files which might be the code we see above. Based on the number in name of the last directory (.e.g. tutorial003_py310.py contains the number 003), look for another with the next number in sequence (e.g. 004 in this case). Find the one that matches the code in the tutorial. Let's give an abstract name to the one we found: *new-tutorial-name*
+9. TODO (FIX THIS STEP). From Chromium Instance 2, Tab 1, navigate to the top-level directory portion of *old-tutorial-name*. (e.g. `.../query_params_str_validations`).  Observe some .py files which might be the code we see above. Based on the number in name of the last directory (.e.g. tutorial003_py310.py contains the number 003), look for another with the next number in sequence (e.g. 004 in this case). Find the filename whose file contents match the code in the tutorial. Let's create yet another mental variable name to contain the filename we found: *new-tutorial-name*.  e.g. *new-tutorial-name* contains `query_params_str_validations/tutorial002_an_py310.py`
 10.  From Konsole tab 3, press Ctrl-C to terminate the currently running *old-tutorial-name*
 11.  Execute the following:
    ``` bash
      cd ../../ # fastapi_learn_tutorial_user_guide
-     ./clone-tutorial query_params/tutorial004_py310.py query_params/tutorial005.py
-     cd query_params/tutorial005.py
+     ./clone-tutorial *old-tutorial-name* *new-tutorial-name*
+     cd *new-tutorial-name*
      ./RUNME
    ```
-11. Observe that a new Chrome window appears with several tabs open:
+11. Observe that a new Chromium window appears with several tabs open:
 
      ![image](https://github.com/user-attachments/assets/b5097f1c-88b4-43a7-b31f-c56b0d0917ae)
 
