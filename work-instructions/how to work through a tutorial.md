@@ -31,8 +31,11 @@
 
 9. In this example that part is `query_params_str_validations/tutorial001_py310.py`.  Let's create another mental variable name called *old-tutorial-name* to refer to that part of the URL (in this case `query_params_str_validations/tutorial001_py310.py`)
 10. From Chromium Instance 2, Tab 2, navigate to *new-tutorial-directory*. (e.g. `.../query_params_str_validations`).  Observe some .py filenames whose contents might be the code we see above. Based on the number in name of the last directory (.e.g. tutorial003_py310.py contains the number 003), look for another with the next number in sequence (e.g. 004 in this case). Find the filename whose file contents match the code in the tutorial. Let's create yet another mental variable name to contain the filename we found: *new-tutorial-name*.  e.g. *new-tutorial-name* contains `query_params_str_validations/tutorial002_an_py310.py`
-11.  From Konsole tab 3, press Ctrl-C to terminate the currently running *old-tutorial-name*
-12.  Execute the following:
+
+NOTE: both *old-tutorial-name* and *new-tutorial-name* should contain two path elements: `query_params_str_validations/tutorial002_an_py310.py` `query_params_str_validations` and `tutorial002_an_py310.py`
+    
+12.  From Konsole tab 3, press Ctrl-C to terminate the currently running *old-tutorial-name*
+13.  Execute the following:
    ``` bash
      cd ../../ # fastapi_learn_tutorial_user_guide
      ./clone-tutorial *old-tutorial-name* *new-tutorial-name*
