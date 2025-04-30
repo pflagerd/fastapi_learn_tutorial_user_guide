@@ -20,10 +20,10 @@
 
    ![image](https://github.com/user-attachments/assets/da7f2b20-b8ce-4584-88f4-3982b54f4575)
    
-5. Look at Chromium Instance 2, Tab 1 again and observe that the name of the URL for the current tutorial has a "suffix". e.g.
-   ![image](https://github.com/user-attachments/assets/ab2f3d0c-4f49-4513-a528-653dda557eea)
+5. Look at Chromium Instance 2, Tab 1 again and observe the portion of the URL preceding the "#". e.g.
+   ![image](https://github.com/user-attachments/assets/c56a6bcc-e8bc-42fc-82ce-3b0f641607e5)
 
-6. In this example, the "suffix" is `query-params-str-validations`.
+6. In this example that would be `query-params-str-validations`.
 7. Let's create a kind of mental variable name which we will call *new-tutorial-directory*. We will use this variable name to refer to this "suffix" (e.g. `query-params-str-validations`) later in this work instruction.
 8. Read the tutorial until we encounter some code. Here's an old example:
 
