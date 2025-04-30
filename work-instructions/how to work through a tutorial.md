@@ -13,7 +13,7 @@
 
    Notice that in this case the link copied was `https://fastapi.tiangolo.com/tutorial/query-params-str-validations/#add-more-validations`
 
-4. Using Kate (or another editor) Tab 2, paste the copied link into `fastapi_learn_tutorial_user_guide/RUNME` as shown:
+4. Using Kate (or another editor) Tab 2 edit `fastapi_learn_tutorial_user_guide/RUNME`, replacing the first link on line 11 with the copied link:
 
    ![image](https://github.com/user-attachments/assets/da7f2b20-b8ce-4584-88f4-3982b54f4575)
    
