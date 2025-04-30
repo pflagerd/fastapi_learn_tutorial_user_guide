@@ -16,24 +16,23 @@
 4. Using Kate (or another editor) paste the copied link into fastapi_learn_tutorial_user_guide/RUNME as shown:
 
    ![image](https://github.com/user-attachments/assets/da7f2b20-b8ce-4584-88f4-3982b54f4575)
-   ![image](https://github.com/user-attachments/assets/0cf33ae6-eb1f-48de-8291-247d5d67f187)[Required Query Parameters](https://fastapi.tiangolo.com/tutorial/query-params/#required-query-parameters)
    
-6. Look at Chromium Instance 2, Tab 1 again and observe the portion of the URL preceding the "#". e.g.
+5. Look at Chromium Instance 2, Tab 1 again and observe the portion of the URL preceding the "#". e.g.
    ![image](https://github.com/user-attachments/assets/c56a6bcc-e8bc-42fc-82ce-3b0f641607e5)
 
-7. In this example that would be `query-params-str-validations`.
-8. Let's create a kind of mental variable name which we will call *new-tutorial-directory*. We will use this variable name to refer to this "suffix" (e.g. `query-params-str-validations`) later in this work instruction.
-9. Read the tutorial until we encounter some code. Here's an old example:
+6. In this example that would be `query-params-str-validations`.
+7. Let's create a kind of mental variable name which we will call *new-tutorial-directory*. We will use this variable name to refer to this "suffix" (e.g. `query-params-str-validations`) later in this work instruction.
+8. Read the tutorial until we encounter some code. Here's an old example:
 
      ![Image](https://github.com/user-attachments/assets/eab3c212-b07c-4818-a331-6033fd0af548)
 
-10. In Chromium Instance 2, Tab 2, make a mental note of the part of the URL following `fastapi/docs_src`. e.g.
+9. In Chromium Instance 2, Tab 2, make a mental note of the part of the URL following `fastapi/docs_src`. e.g.
    ![image](https://github.com/user-attachments/assets/d66aaa2f-588b-4d68-85aa-65545b894325)
 
-11. In this example that part is `query_params_str_validations/tutorial001_py310.py`.  Let's create another mental variable name called *old-tutorial-name* to refer to that part of the URL (in this case `query_params_str_validations/tutorial001_py310.py`)
-12. From Chromium Instance 2, Tab 1, navigate to the *new-tutorial-directory* portion of *old-tutorial-name*. (e.g. `.../query_params_str_validations`).  Observe some .py files which might be the code we see above. Based on the number in name of the last directory (.e.g. tutorial003_py310.py contains the number 003), look for another with the next number in sequence (e.g. 004 in this case). Find the filename whose file contents match the code in the tutorial. Let's create yet another mental variable name to contain the filename we found: *new-tutorial-name*.  e.g. *new-tutorial-name* contains `query_params_str_validations/tutorial002_an_py310.py`
-13.  From Konsole tab 3, press Ctrl-C to terminate the currently running *old-tutorial-name*
-14.  Execute the following:
+10. In this example that part is `query_params_str_validations/tutorial001_py310.py`.  Let's create another mental variable name called *old-tutorial-name* to refer to that part of the URL (in this case `query_params_str_validations/tutorial001_py310.py`)
+11. From Chromium Instance 2, Tab 1, navigate to the *new-tutorial-directory* portion of *old-tutorial-name*. (e.g. `.../query_params_str_validations`).  Observe some .py files which might be the code we see above. Based on the number in name of the last directory (.e.g. tutorial003_py310.py contains the number 003), look for another with the next number in sequence (e.g. 004 in this case). Find the filename whose file contents match the code in the tutorial. Let's create yet another mental variable name to contain the filename we found: *new-tutorial-name*.  e.g. *new-tutorial-name* contains `query_params_str_validations/tutorial002_an_py310.py`
+12.  From Konsole tab 3, press Ctrl-C to terminate the currently running *old-tutorial-name*
+13.  Execute the following:
    ``` bash
      cd ../../ # fastapi_learn_tutorial_user_guide
      ./clone-tutorial *old-tutorial-name* *new-tutorial-name*
