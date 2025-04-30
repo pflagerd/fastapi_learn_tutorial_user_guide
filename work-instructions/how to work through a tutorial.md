@@ -21,7 +21,7 @@
    ![image](https://github.com/user-attachments/assets/c56a6bcc-e8bc-42fc-82ce-3b0f641607e5)
 
      In this example that would be `query-params-str-validations`.
-6. Let's create a kind of mental variable name which we will call *new-tutorial-directory*. We will use this variable name to refer to this "suffix" (e.g. `query-params-str-validations`) later in this work instruction.
+6. Let's create a kind of mental variable name which we will call *new-tutorial-directory*. We will use this variable name to refer to this portion (e.g. `query-params-str-validations`) later in this work instruction.
 7. Read the tutorial until we encounter some code. Here's an old example:
 
      ![Image](https://github.com/user-attachments/assets/eab3c212-b07c-4818-a331-6033fd0af548)
