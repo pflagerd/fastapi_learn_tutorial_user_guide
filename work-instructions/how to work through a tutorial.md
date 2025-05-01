@@ -1,4 +1,4 @@
-1. From Chromium Instance 2, Tab 1, navigate to the next tutorial or the next chunk of the current tutorial (based on the existence of the sub-title font).
+1. From Chromium Instance 2, Tab 1, navigate to the next tutorial or the next chunk of the current tutorial (sometimes based on the existence of the sub-title font).
      <br><br>e.g. the sub-title font will look something like this (different text)
 
      ![Image](https://github.com/user-attachments/assets/87a516aa-6cf3-4bd5-a5a3-f9e01148cadb)
