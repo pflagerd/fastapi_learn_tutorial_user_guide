@@ -68,7 +68,7 @@
     ./RUNME
     ```
 18. Observe that there are three Chromium instances as before, and a Konsole instance now with three tabs.
-19. Observe that Konsole tab 3 is running *new-tutorial_name*
+19. Observe that Konsole tab 3 is running *new-tutorial-name*
 20. Observe that Chromium instance 2, Tab 1 is showing the new tutorial page.
 21. Observe that Chromium instance 2, Tab 2 is showing *new-tutorial-name* under the fastapi repo directory `fastapi/docs_src/`.
 22. Observe that Chromium instance 2, Tab 3 is showing *new-tutorial-name* under the `fastapi_learn_tutorial_user_guide/` directory
