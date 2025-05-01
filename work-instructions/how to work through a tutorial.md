@@ -71,7 +71,7 @@
 19. Observe that Konsole tab 3 is running *new-tutorial-name*
 20. Observe that Chromium instance 2, Tab 1 is showing the new tutorial page.
 21. Observe that Chromium instance 2, Tab 2 is showing *new-tutorial-name* under the fastapi repo directory `https://github.com/fastapi/fastapi/blob/master/docs_src/`.
-22. Observe that Chromium instance 2, Tab 3 is showing *new-tutorial-name* under the `https://github.com/pflagerd/fastapi_learn_tutorial_user_guide/tree/master/` directory
+22. Observe that Chromium instance 2, Tab 3 is showing *new-tutorial-name* under the `https://github.com/pflagerd/fastapi_learn_tutorial_user_guide/tree/master/`.
 23. Observe that Chromium instance 3, Tab 2, shows `127.0.0.1:8000/docs` and when fully expanded shows the expected Parameters as defined in the tutorial's code.
 24. Decide how to test the statements made in the tutorial. One test case is implied by the tutorial text:
 
