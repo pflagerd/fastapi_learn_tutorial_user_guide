@@ -1,0 +1,11 @@
+#!/bin/bash
+if ! (which python3 >/dev/null && python3 --version | grep ' 3.' >/dev/null); then
+  echo "You must have python 3 installed to run this."
+  exit 1
+fi
+
+cd $(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)
+
+[ -f setmeup.py ] || cp ../../setmeup.py .
+[ -f requirements.txt ] || cp ../../requirements.txt .
+exec python3 $(dirname "$(readlink -f "$0")")/setmeup.py
