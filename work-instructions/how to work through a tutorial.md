@@ -7,7 +7,7 @@
 
    ![image](https://github.com/user-attachments/assets/d0c091d0-896d-4da8-86fc-cbdf74ef3ecd)
 
-3. Right click, and choose "Copy Link Address" to capture a link which can be used to update fastapi_learn_tutorial_user_guide/RUNME to show the correct tutorial in Chromium Instance 2, Tab 1.
+3. Right click, and choose "Copy Link Address" to capture a link which we will later use to update fastapi_learn_tutorial_user_guide/RUNME to show the correct tutorial in Chromium Instance 2, Tab 1.
 
    ![image](https://github.com/user-attachments/assets/c0e91164-3fb3-404e-8c75-0231a503e352)
 
