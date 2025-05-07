@@ -13,7 +13,7 @@
 
    Notice that in this case the link copied was `https://fastapi.tiangolo.com/tutorial/query-params-str-validations/#add-more-validations`
 
-4. Paste the link and a screen shot of the next tutorial into the issue associated with working through the tutorial. e.g. [#64](https://github.com/pflagerd/fastapi_learn_tutorial_user_guide/issues/64)
+4. Paste the link and a screen shot of the next tutorial or next chunk of the current tutorial into the issue associated with working through the tutorial. e.g. [#64](https://github.com/pflagerd/fastapi_learn_tutorial_user_guide/issues/64)
 
    Rationale: This step is intended to give us a visual cue as to what the copied link will look like when put into a browser.
 
