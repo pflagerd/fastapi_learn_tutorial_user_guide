@@ -6,9 +6,9 @@ fi
 
 cd $(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)
 
-[ -x $(which kate) ] && kate --new ../RUNME ./RUNME query_params_str_validations/tutorial015_an_py310.py/RUNME &
+[ -x $(which kate) ] && kate --new ../RUNME ./RUNME path_params_numeric_validations/tutorial001_an_py310.py/RUNME &
 
-python3 $(dirname "$(readlink -f "$0")")/runme.py "https://fastapi.tiangolo.com/tutorial/query-params-str-validations/#custom-validation" "https://github.com/fastapi/fastapi/blob/master/docs_src/query_params_str_validations/tutorial015_an_py310.py" "https://github.com/pflagerd/fastapi_learn_tutorial_user_guide/tree/master/query_params_str_validations/tutorial015_an_py310.py"
+python3 $(dirname "$(readlink -f "$0")")/runme.py "https://fastapi.tiangolo.com/tutorial/path-params-numeric-validations/#path-parameters-and-numeric-validations" "https://github.com/fastapi/fastapi/blob/master/docs_src/path_params_numeric_validations/tutorial001_an_py310.py" "https://github.com/pflagerd/fastapi_learn_tutorial_user_guide/tree/master/path_params_numeric_validations/tutorial001_an_py310.py"
 
 
 
