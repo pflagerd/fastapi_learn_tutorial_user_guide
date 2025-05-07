@@ -17,30 +17,30 @@
 
    Rationale: This step is intended to give us a visual cue as to what the copied link will look like when put into a browser.
 
-
-6. Using Kate (or another editor) Tab 2 edit `fastapi_learn_tutorial_user_guide/RUNME`, replacing the first link on line 11 with the copied link:
+5. Using Kate (or another editor) Tab 2 edit `fastapi_learn_tutorial_user_guide/RUNME`, replacing the first link on line 11 with the copied link:
 
    ![image](https://github.com/user-attachments/assets/da7f2b20-b8ce-4584-88f4-3982b54f4575)
    
-7. Look at Chromium Instance 2, Tab 1 again and observe the portion of the URL preceding the "#". e.g.
-   ![image](https://github.com/user-attachments/assets/c56a6bcc-e8bc-42fc-82ce-3b0f641607e5)
+6. From the link just pasted make a mental note of the portion preceding the `/#` (e.g. `query-params-str-validations`)
+  
+7. Create a kind of mental variable name which we will call *new-tutorial-directory*.
+  
+   Rationale: We will use this variable name to refer to this portion later in this work instruction.
 
-     In this example that would be `query-params-str-validations`.
-8. Let's create a kind of mental variable name which we will call *new-tutorial-directory*. We will use this variable name to refer to this portion (e.g. `query-params-str-validations`) later in this work instruction.
-9. Read the tutorial until we encounter some code. Here's an old example:
+8. Read the tutorial until we encounter some code. Here's an old example:
 
      ![Image](https://github.com/user-attachments/assets/eab3c212-b07c-4818-a331-6033fd0af548)
 
-10. In Chromium Instance 2, Tab 2, make a mental note of the part of the URL following `fastapi/docs_src`. e.g.
+9. In Chromium Instance 2, Tab 2, make a mental note of the part of the URL following `fastapi/docs_src`. e.g.
    ![image](https://github.com/user-attachments/assets/d66aaa2f-588b-4d68-85aa-65545b894325)
 
-11. In this example that part is `query_params_str_validations/tutorial001_py310.py`.  Let's create another mental variable name called *old-tutorial-name* to refer to that part of the URL (in this case `query_params_str_validations/tutorial001_py310.py`)
-12. From Chromium Instance 2, Tab 2, navigate to *new-tutorial-directory*. (e.g. `.../query_params_str_validations`).  Observe some .py filenames whose contents might be the code we see above.
-13. Find the filename whose contents match the code in the tutorial.
-14. Let's create yet another mental variable name to contain the filename we found: *new-tutorial-name*.  e.g. *new-tutorial-name* contains `query_params_str_validations/tutorial002_an_py310.py`
-15. NOTE: both *old-tutorial-name* and *new-tutorial-name* should contain two path elements (a sort of directory and a sort of filename): `query_params_str_validations/tutorial002_an_py310.py` `query_params_str_validations` and `tutorial002_an_py310.py`    
-16.  From Konsole tab 3, press Ctrl-C to terminate the currently running *old-tutorial-name*
-17.  Execute the following:
+10. In this example that part is `query_params_str_validations/tutorial001_py310.py`.  Let's create another mental variable name called *old-tutorial-name* to refer to that part of the URL (in this case `query_params_str_validations/tutorial001_py310.py`)
+11. From Chromium Instance 2, Tab 2, navigate to *new-tutorial-directory*. (e.g. `.../query_params_str_validations`).  Observe some .py filenames whose contents might be the code we see above.
+12. Find the filename whose contents match the code in the tutorial.
+13. Let's create yet another mental variable name to contain the filename we found: *new-tutorial-name*.  e.g. *new-tutorial-name* contains `query_params_str_validations/tutorial002_an_py310.py`
+14. NOTE: both *old-tutorial-name* and *new-tutorial-name* should contain two path elements (a sort of directory and a sort of filename): `query_params_str_validations/tutorial002_an_py310.py` `query_params_str_validations` and `tutorial002_an_py310.py`    
+15.  From Konsole tab 3, press Ctrl-C to terminate the currently running *old-tutorial-name*
+16.  Execute the following:
    ``` bash
      cd ../../ # fastapi_learn_tutorial_user_guide
      ./clone-tutorial *old-tutorial-name* *new-tutorial-name*
