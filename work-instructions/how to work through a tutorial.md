@@ -25,7 +25,7 @@
 
      ![Image](https://github.com/user-attachments/assets/eab3c212-b07c-4818-a331-6033fd0af548)
 
-7. In Chromium Instance 2, Tab 2, make a mental note of the part of the URL following `fastapi/docs_src`. e.g.
+7. In Chromium Instance 2, Tab 2, make a mental note of the part of the URL following `https://fastapi/docs_src`. e.g.
    ![image](https://github.com/user-attachments/assets/d66aaa2f-588b-4d68-85aa-65545b894325)
 
 8. In this example that part is `query_params_str_validations/tutorial001_py310.py`.  Let's create another mental variable name called *old-tutorial-name* to refer to that part of the URL (in this case `query_params_str_validations/tutorial001_py310.py`)
