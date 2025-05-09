@@ -1,3 +1,5 @@
-new-tutorial-directory = query_params_str_validations
-old-tutorial-name = query_params_str_validations/tutorial012_an_py39.py
-new-tutorial-name = query_params_str_validations/tutorial013_an_py39.py
+new-tutorial-directory = path-params-numeric-validations
+old-tutorial-name = query_params_str_validations/tutorial015_an_py310.py
+new-tutorial-name = path_params_numeric_validations/tutorial001_an_py310.py
+
+Sidney Dekker
