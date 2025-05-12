@@ -1,5 +1,5 @@
-new-tutorial-directory = path-params-numeric-validations
-old-tutorial-name = path_params_numeric_validations/tutorial004_an_py39.py
-new-tutorial-name = https://fastapi.tiangolo.com/tutorial/path-params-numeric-validations/#number-validations-greater-than-and-less-than-or-equal
+new-tutorial-directory = query-param-models
+old-tutorial-name = path_params_numeric_validations/tutorial006_an_py39.py
+new-tutorial-name =
 
 Sidney Dekker
