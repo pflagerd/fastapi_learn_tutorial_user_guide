@@ -8,15 +8,16 @@
    ![image](https://github.com/user-attachments/assets/c0e91164-3fb3-404e-8c75-0231a503e352)
 
    Notice that in this case the link copied was `https://fastapi.tiangolo.com/tutorial/query-params-str-validations/#add-more-validations`
-
-3. Paste the link and a screen shot of the next tutorial or next chunk of the current tutorial into the issue associated with working through the tutorial. e.g. [#64](https://github.com/pflagerd/fastapi_learn_tutorial_user_guide/issues/64)
-
-   Rationale: This step is intended to give us a visual cue as to what the copied link will look like when put into a browser.
-
-4. Using Kate (or another editor) Tab 2 edit `fastapi_learn_tutorial_user_guide/RUNME`, replacing the first link on line 11 with the copied link:
+   
+3. Using Kate (or another editor) Tab 2 edit `fastapi_learn_tutorial_user_guide/RUNME`, replacing the first link on line 11 with the copied link:
 
    ![image](https://github.com/user-attachments/assets/da7f2b20-b8ce-4584-88f4-3982b54f4575)
    
+
+4. Paste the same link and a screen shot of the next tutorial or next chunk of the current tutorial into the issue associated with working through the tutorial. e.g. [#64](https://github.com/pflagerd/fastapi_learn_tutorial_user_guide/issues/64)
+
+   Rationale: This step is intended to give us a visual cue as to what the copied link will look like when put into a browser.
+
 5. From the link just pasted make a variable called *new-tutorial-directory* containing the portion of the URL following the `https://fastapi.tiangolo.com/tutorial/` AND preceding the `/#`(e.g. `query-params-str-validations`)
     
    Rationale: We will use this variable name to refer to this portion later in this work instruction.
@@ -72,7 +73,7 @@
 22. Observe that Chromium instance 2, Tab 2 is showing *new-tutorial-name* under the fastapi repo directory `https://github.com/fastapi/fastapi/blob/master/docs_src/`.
 23. Observe that Chromium instance 2, Tab 3 is showing *new-tutorial-name* under the `https://github.com/pflagerd/fastapi_learn_tutorial_user_guide/tree/master/`.
 24. Observe that Chromium instance 3, Tab 2, shows `127.0.0.1:8000/docs` and when fully expanded shows the expected Parameters as defined in the tutorial's code.
-25. Decide how to test the statements made in the tutorial. One test case is implied by the tutorial text:
+25. Decide how to test the statements made in the tutorial and the code in the tutorial. Here is an example similar to the code you'd be testing.:
 
      ![Image](https://github.com/user-attachments/assets/606eb18d-4328-40dd-94ea-e976e1aede61)
 
