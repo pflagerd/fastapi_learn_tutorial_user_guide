@@ -73,7 +73,7 @@
 22. Observe that Chromium instance 2, Tab 2 is showing *new-tutorial-name* under the fastapi repo directory `https://github.com/fastapi/fastapi/blob/master/docs_src/`.
 23. Observe that Chromium instance 2, Tab 3 is showing *new-tutorial-name* under the `https://github.com/pflagerd/fastapi_learn_tutorial_user_guide/tree/master/`.
 24. Observe that Chromium instance 3, Tab 2, shows `127.0.0.1:8000/docs` and when fully expanded shows the expected Parameters as defined in the tutorial's code.
-25. Decide how to test the statements made in the tutorial and the code in the tutorial. Here is an example similar to the code you'd be testing.:
+25. Decide how to test the statements made in the tutorial and the code in the tutorial. Here is an example similar to the code you'll be testing.:
 
      ![Image](https://github.com/user-attachments/assets/606eb18d-4328-40dd-94ea-e976e1aede61)
 
